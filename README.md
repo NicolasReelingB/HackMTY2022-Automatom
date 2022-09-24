@@ -1,2 +1,2 @@
-# HackMTY2022-Automathom
+# HackMTY2022-Automatom
 Hackathon Repo
