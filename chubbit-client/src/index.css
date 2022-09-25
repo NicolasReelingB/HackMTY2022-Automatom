@@ -27,6 +27,8 @@
 
 h1 {
     font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+    @apply text-4xl;
 }
 
 .logo-text {
