@@ -74,12 +74,8 @@ function App() {
           ) : (
             <div className="my-4">
               <Routes>
-              <Route
-                  path="/"
-                  element={<FaceDetect />}
-                />
                 <Route
-                  path="/main"
+                  path="/"
                   element={<Home marketplace={marketplace} nft={nft} />}
                 />
                 <Route
