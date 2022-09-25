@@ -31,6 +31,12 @@ h1 {
     @apply text-4xl;
 }
 
+h2 {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 500;
+    @apply text-xl;
+}
+
 .logo-text {
   background: -webkit-linear-gradient(rgb(146, 103, 255), rgb(244, 86, 255));
   -webkit-background-clip: text;
