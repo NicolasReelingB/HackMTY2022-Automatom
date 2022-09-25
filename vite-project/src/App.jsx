@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 
 function App() {
   return (
-    <h1>Thisisisisisisisisisisis</h1>
+    <h1></h1>
   );
 }
 

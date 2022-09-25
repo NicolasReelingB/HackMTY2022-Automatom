@@ -36,7 +36,7 @@ function FaceDetect() {
       console.log(` Unique Facial ID: ${response.facialId}
           PayLoad: ${response.payload}
           `);
-      navigate("/test");
+          window.location.href = "http://localhost:3000"
     } catch (error) {
       console.log(error);
     }
