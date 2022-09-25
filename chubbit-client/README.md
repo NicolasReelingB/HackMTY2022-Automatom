@@ -1,4 +1,4 @@
-# NFT Marketplace
+# Chubbit
 
 ## Technology Stack & Tools
 
@@ -12,18 +12,21 @@
 ## Requirements For Initial Setup
 - Install [NodeJS](https://nodejs.org/en/), should work with any node version below 16.5.0
 - Install [Hardhat](https://hardhat.org/)
+```
+$ npm i -g hardhat
+```
 
 ## Setting Up
 ### 1. Clone/Download the Repository
 
 ### 2. Install Dependencies:
 ```
-$ cd nft_marketplace
+$ cd chubb-client
 $ npm install
 ```
 ### 3. Boot up local development blockchain
 ```
-$ cd nft_marketplace
+$ cd chubb-client
 $ npx hardhat node
 ```
 
