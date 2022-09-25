@@ -11,7 +11,7 @@ const GettingStarted = () => {
             your Metaverse interactions through the use modern Web 3.0
             technologies.
           </p>
-          <h1 className="text-6xl pb-10 mt-10">How?</h1>
+          <h1 className="text-4.5xl pb-5 mt-10">How?</h1>
           <div className="bg-white opacity-80 h-0.5 w-full rounded mb-10"></div>
           <p className="text-lg pb-5">
             We achieve this goal by providing you with the tools required to
@@ -31,9 +31,21 @@ const GettingStarted = () => {
             technologies that merge perfectly with Web 3.0:
           </p>
         </div>
-        <div className="pt-10 flex flex-col items-start justify-centstarter">
+        <div className="pt-10 pb-10 flex flex-col items-start justify-centstarter">
           <IconF />
         </div>
+        <h1 className="text-4.5xl pb-5">Start now</h1>
+        <div className="bg-white opacity-80 h-0.5 w-full rounded mb-10"></div>
+        <p className="text-lg">Take your first steps in the world of web 3.0 by following these simple instructions:</p>
+        <ul className="list-disc space-y-5 text-lg pt-5 pl-10 pb-10">
+            <li>Install Metamask</li>
+            <li>Connect your wallet</li>
+            <li>Create a Chubbit account</li>
+            <li>Log in</li>
+            <li>Acquire your first Chubbits</li>
+            <li>Make your first purchase or sell your first NFT</li>  
+        </ul>
+        
       </div>
     </div>
   );
