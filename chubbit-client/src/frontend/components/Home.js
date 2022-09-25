@@ -3,6 +3,7 @@ import { ethers } from "ethers";
 import { Row, Col, Card, Button } from "react-bootstrap";
 import ItemCard from "./ItemCard";
 import Hero from "./sections/Hero";
+import GettingStarted from "./GetS";
 
 const Home = ({ marketplace, nft }) => {
   const [loading, setLoading] = useState(true);
@@ -55,6 +56,7 @@ const Home = ({ marketplace, nft }) => {
   return (
     <div className="flex flex-col justify-center items-center">
       <Hero />
+      <GettingStarted />
       {items.length > 0 ? (
         <div className="px-5 container grid md:grid-cols-3 grid-cols-1">
           {items.map((item, i) => (

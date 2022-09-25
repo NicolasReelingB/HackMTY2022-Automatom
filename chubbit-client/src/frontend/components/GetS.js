@@ -3,8 +3,8 @@ const GettingStarted = () => {
   return (
     <div className="flex flex-col">
       <div className="container text-base font-light leading-relaxed p-10 content-center">
-        <h1 className="text-6xl py-6">Getting Started</h1>
-        <div className="bg-white opacity-70 h-0.5 w-2/3 rounded mb-10"></div>
+        <h1 className="text-6xl pb-6 pt-2">Getting Started</h1>
+        <div className="bg-white opacity-70 h-0.5 w-full rounded mb-10"></div>
         <div className="text-xl">
           <p className="opacity-90 text-lg w-4/6 pb-5">
             Chubbit is a web app that allows you to maintain the integrity of
@@ -12,7 +12,7 @@ const GettingStarted = () => {
             technologies.
           </p>
           <h1 className="text-6xl pb-10 mt-10">How?</h1>
-          <div className="bg-white opacity-80 h-0.5 w-3/4 rounded mb-10"></div>
+          <div className="bg-white opacity-80 h-0.5 w-full rounded mb-10"></div>
           <p className="text-lg pb-5">
             We achieve this goal by providing you with the tools required to
             interact in this new environment.
@@ -25,7 +25,7 @@ const GettingStarted = () => {
             <li>Decentralized Identity</li>
             <li>Decentralized Finance</li>
           </ul>
-          <div className="bg-white opacity-80 h-0.5 w-3/4 rounded mb-10"></div>
+          <div className="bg-white opacity-80 h-0.5 w-full rounded mb-10"></div>
           <p className="flex flex-col justify-start items-start opacity-90 text-lg">
             The engineering behind our platform involves very sophisticated new
             technologies that merge perfectly with Web 3.0:
