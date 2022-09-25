@@ -10,6 +10,9 @@ const Navigation = ({ web3Handler, account }) => {
         <Link to="/" className="text-gray-200 text-md mx-4">
           Main
         </Link>
+        <Link to="/purchase" className="text-gray-200 text-md mx-4">
+          Purchase
+        </Link>
         <Link to="/create" className="text-gray-200 text-md mx-4">
           Sell
         </Link>
@@ -26,7 +29,7 @@ const Navigation = ({ web3Handler, account }) => {
       <div className="flex flex-row justify-center items-center w-1/4">
         {account ? (
           <Link
-            to={`https://etherscan.io/address/${account}`}
+            to={`/`}
             target="_blank"
             rel="noopener noreferrer"
           >

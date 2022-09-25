@@ -12,6 +12,7 @@ import { useState } from "react";
 import { ethers } from "ethers";
 import GettingStarted from "./GetS";
 import Claim from "./Claim";
+import Purchase from "./Purchase";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -69,6 +70,10 @@ function App() {
                 <Route
                   path="/create"
                   element={<Create marketplace={marketplace} nft={nft} />}
+                />
+                <Route
+                  path="/purchase"
+                  element={<Purchase marketplace={marketplace} nft={nft} />}
                 />
                 <Route
                   path="/my-listed-items"
