@@ -2,11 +2,11 @@ import { Link } from "react-router-dom";
 
 const Navigation = ({ web3Handler, account }) => {
   return (
-    <nav className="flex flex-row justify-between py-4 items-center bg-black">
+    <nav className="flex flex-row justify-between py-4 items-center bg-black sticky top-0 left-0 w-full h-18">
       <div className="flex flex-row justify-center items-center w-1/4">
         <h1 className="text-3xl font-bold text-white logo-text">Chubbit</h1>
       </div>
-      <div className="flex flex-row justify-center items-center w-1/2">
+      <div className="flex flex-row justify-center items-center w-1/2 navlinks">
         <Link to="/" className="text-gray-200 text-md mx-4">
           Main
         </Link>
@@ -32,9 +32,10 @@ const Navigation = ({ web3Handler, account }) => {
             to={`https://etherscan.io/address/${account}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-full border-white py-2 px-4 text-white text-sm"
           >
-            {account.slice(0, 5) + "..." + account.slice(38, 42)}
+            <span className="rounded-lg border-white py-2 px-4 text-white text-sm text-bold">
+              {account.slice(0, 5) + "..." + account.slice(38, 42)}
+            </span>
           </Link>
         ) : (
           <button
