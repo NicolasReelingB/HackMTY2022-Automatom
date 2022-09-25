@@ -61,17 +61,7 @@ function App() {
         </>
         <div>
           {loading ? (
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                minHeight: "80vh",
-              }}
-            >
-              <Spinner animation="border" style={{ display: "flex" }} />
-              <p className="mx-3 my-0">Esperando conexion con MetaMask...</p>
-            </div>
+            <GettingStarted />
           ) : (
             <div className="my-4">
               <Routes>
