@@ -4,20 +4,23 @@ const Navigation = ({ web3Handler, account }) => {
   return (
     <nav className="flex flex-row justify-between py-4 items-center bg-black">
       <div className="flex flex-row justify-center items-center w-1/4">
-        <h1 className="text-2xl font-bold text-white">Chubbit</h1>
+        <h1 className="text-3xl font-bold text-white logo-text">Chubbit</h1>
       </div>
       <div className="flex flex-row justify-center items-center w-1/2">
         <Link to="/" className="text-gray-200 text-md mx-4">
-          Inicio
+          Main
         </Link>
         <Link to="/create" className="text-gray-200 text-md mx-4">
-          Vender
+          Sell
         </Link>
         <Link to="/my-listed-items" className="text-gray-200 text-md mx-4">
-          Mis productos
+          My items
         </Link>
         <Link to="/my-purchases" className="text-gray-200 text-md mx-4">
-          Mis compras
+          My purchases
+        </Link>
+        <Link to="/claim" className="text-gray-200 text-md mx-4">
+          Claim
         </Link>
         <Link to="/GetS" className="text-gray-200 text-md mx-4">
           Getting Started

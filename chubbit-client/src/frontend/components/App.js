@@ -12,6 +12,8 @@ import { useState } from "react";
 import { ethers } from "ethers";
 import { Spinner } from "react-bootstrap";
 import GettingStarted from "./GetS";
+import Claim from "./Claim";
+
 function App() {
   const [loading, setLoading] = useState(true);
   const [account, setAccount] = useState(null);
@@ -105,7 +107,8 @@ function App() {
                   path="/GetS"
                   element={<GettingStarted marketplace={marketplace} nft={nft} account={account}/>}
                 />
-              </Routes>
+                <Route path="/claim" element={<Claim />} />
+                </Routes>
             </div>
           )}
         </div>
