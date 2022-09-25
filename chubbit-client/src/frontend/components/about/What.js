@@ -1,12 +1,10 @@
 const What = () => {
     return (
-        <div className="">
+        <div className="text-lg w-2/3">
             <p>
-                Chubbit is a platform that allows you to buy and sell items
-                locally. It is a great way to get rid of items you no longer
-                need and to find items you need. It is also a great way to
-                make some extra cash. Chubbit is a great alternative to
-                Craigslist and Facebook Marketplace.
+                Chubbit is a platform that allows you to immerse yourself even further in the Metaverse by merging your new you with the real world. 
+                This is done by providing you with the tools to interact with the Metaverse in a way that is secure, private and easy to use. 
+                Our main goal is to give you the incentive to explore the Metaverse and to make it as easy as possible to do so. 
             </p>
         </div>
     )

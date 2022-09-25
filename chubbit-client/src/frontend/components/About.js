@@ -11,7 +11,7 @@ const About = () => {
     <div className="about">
       <h1>About</h1>
       <nav>
-        <div className="flex flex-row justify-start items-center w-full navlinks">
+        <div className="flex flex-row justify-start items-center w-full navlinks mt-5">
           <button
             onClick={() => setAbout(1)}
             className="text-gray-200 text-md mx-4"
@@ -38,6 +38,7 @@ const About = () => {
           </button>
         </div>
       </nav>
+      <div className="bg-white opacity-80 h-0.5 w-full rounded mb-10"></div>
       {about === 1 && <What />}
       {about === 2 && <Tech />}
       {about === 3 && <Why />}

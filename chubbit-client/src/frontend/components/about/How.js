@@ -1,20 +1,17 @@
 const How = () => {
     return (
+        
         <div>
-            <h1 className="text-4.5xl pb-5 mt-10">How?</h1>
-            <div className="bg-white opacity-80 h-0.5 w-full rounded mb-10"></div>
-                <p className="text-lg pb-5">
-                    We achieve this goal by providing you with the tools required to
-                    interact in this new environment.
-                </p>
-                <h2 className="text-2xl pb-5">
-                    Bringing forth a plehtora of benefits:
-                </h2>
-                <ul className="list-disc text-lg p-2 pl-10 pb-10">
-                    <li>Smart Contracts</li>
-                    <li>Decentralized Identity</li>
-                    <li>Decentralized Finance</li>
-                </ul>
+
+                <p className="text-lg">Take your first steps in the world of web 3.0 by following these simple instructions:</p>
+        <ul className="list-decimal space-y-5 text-lg pt-5 pl-10 pb-10">
+            <li>Install Metamask</li>
+            <li>Connect your wallet</li>
+            <li>Create a Chubbit account</li>
+            <li>Log in</li>
+            <li>Acquire your first Chubbits</li>
+            <li>Make your first purchase or sell your first NFT</li>  
+        </ul>
             </div>
     )
     };
