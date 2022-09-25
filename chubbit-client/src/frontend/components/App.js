@@ -11,6 +11,7 @@ import NFTAddress from "../contractsData/NFT-address.json";
 import { useState } from "react";
 import { ethers } from "ethers";
 import { Spinner } from "react-bootstrap";
+import Claim from "./Claim";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -101,6 +102,7 @@ function App() {
                     />
                   }
                 />
+                <Route path="/claim" element={<Claim />} />
               </Routes>
             </div>
           )}
