@@ -11,6 +11,7 @@ import NFTAddress from "../contractsData/NFT-address.json";
 import { useState } from "react";
 import { ethers } from "ethers";
 import { Spinner } from "react-bootstrap";
+import FaceDetect from "./FaceDetect";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -73,8 +74,12 @@ function App() {
           ) : (
             <div className="my-4">
               <Routes>
-                <Route
+              <Route
                   path="/"
+                  element={<FaceDetect />}
+                />
+                <Route
+                  path="/main"
                   element={<Home marketplace={marketplace} nft={nft} />}
                 />
                 <Route

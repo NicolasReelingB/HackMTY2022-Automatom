@@ -7,7 +7,7 @@ const Navigation = ({ web3Handler, account }) => {
         <h1 className="text-2xl font-bold text-white">Chubbit</h1>
       </div>
       <div className="flex flex-row justify-center items-center w-1/2">
-        <Link to="/" className="text-gray-200 text-md mx-4">
+        <Link to="/main" className="text-gray-200 text-md mx-4">
           Inicio
         </Link>
         <Link to="/create" className="text-gray-200 text-md mx-4">
