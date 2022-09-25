@@ -10,7 +10,6 @@ import NFTAbi from "../contractsData/NFT.json";
 import NFTAddress from "../contractsData/NFT-address.json";
 import { useState } from "react";
 import { ethers } from "ethers";
-import { Spinner } from "react-bootstrap";
 import GettingStarted from "./GetS";
 import Claim from "./Claim";
 
@@ -56,14 +55,12 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <>
-          <Navigation web3Handler={web3Handler} account={account} />
-        </>
+        <Navigation web3Handler={web3Handler} account={account} />
         <div>
           {loading ? (
             <GettingStarted />
           ) : (
-            <div className="my-4">
+            <div>
               <Routes>
                 <Route
                   path="/"
@@ -95,10 +92,16 @@ function App() {
                 />
                 <Route
                   path="/GetS"
-                  element={<GettingStarted marketplace={marketplace} nft={nft} account={account}/>}
+                  element={
+                    <GettingStarted
+                      marketplace={marketplace}
+                      nft={nft}
+                      account={account}
+                    />
+                  }
                 />
                 <Route path="/claim" element={<Claim />} />
-                </Routes>
+              </Routes>
             </div>
           )}
         </div>
