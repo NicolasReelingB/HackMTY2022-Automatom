@@ -2,6 +2,7 @@ import { useState } from "react";
 import { ethers } from "ethers";
 import { Row, Form, Button } from "react-bootstrap";
 import { Buffer } from "buffer";
+import { useNavigate } from "react-router-dom";
 
 const ipfsClient = require("ipfs-http-client");
 const projectId = "2FEKhKaLf3WXwbZrwdl5gE0mvny";
@@ -23,6 +24,7 @@ const Create = ({ marketplace, nft }) => {
   const [price, setPrice] = useState(null);
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
+  const nav = useNavigate();
   const uploadToIPFS = async (event) => {
     event.preventDefault();
     const file = event.target.files[0];
@@ -43,6 +45,7 @@ const Create = ({ marketplace, nft }) => {
         JSON.stringify({ image, price, name, description })
       );
       mintThenList(result);
+      nav("/");
     } catch (error) {
       console.log("ipfs uri upload error: ", error);
     }
@@ -85,7 +88,10 @@ const Create = ({ marketplace, nft }) => {
           className="text-input"
           id="name"
         />
-        <label htmlFor="description" className="m-1 text-white text-lg my-1 mx-2">
+        <label
+          htmlFor="description"
+          className="m-1 text-white text-lg my-1 mx-2"
+        >
           Description
         </label>
         <input
