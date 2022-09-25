@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { ethers } from "ethers";
-import { Row, Form, Button } from "react-bootstrap";
 import { Buffer } from "buffer";
 import { useNavigate } from "react-router-dom";
 
@@ -64,6 +63,7 @@ const Create = ({ marketplace, nft }) => {
   };
   return (
     <div className="m-4 flex flex-col justify-center items-center">
+      <h1 className="text-3xl font-bold">Sell Item</h1>
       <div className="container flex flex-col justify-center items-center">
         <label htmlFor="file" className="my-1 mx-2 text-white text-lg">
           File
