@@ -1,8 +1,6 @@
 import React, { useEffect } from "react";
-import { useNavigate } from "react-router-dom";
 
 function FaceDetect() {
-  let navigate = useNavigate();
   let faceio;
 
   useEffect(() => {
@@ -44,7 +42,8 @@ function FaceDetect() {
 
   return (
     <section>
-      <h1>Face Authentication by FaceIO</h1>
+      <h1>Welcome to Chubbit</h1>
+      <h2>Two Worlds, One You</h2>
       <button onClick={handleSignIn}>Sign-in</button>
       <button onClick={handleLogIn}>Log-in</button>
     </section>
