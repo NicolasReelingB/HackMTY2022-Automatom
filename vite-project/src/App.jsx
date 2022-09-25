@@ -5,7 +5,7 @@ function App() {
   let faceio;
 
   useEffect(() => {
-    faceio = new faceIO("fioa414d");
+    faceio = new faceIO("fioa9d9e");
   }, []);
 
   const handleSignIn = async () => {
