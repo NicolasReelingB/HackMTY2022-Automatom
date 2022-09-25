@@ -20,9 +20,9 @@ export default function Hero() {
         <span className="text-left">
           <ImQuotesLeft fontSize={40} />
         </span>
-        <h3 className="text-4xl font-bold text-right my-4">
+        <h1 className="text-6xl font-bold text-right my-4">
           Two WORLDS, one YOU
-        </h3>
+        </h1>
         <span className="text-right">
           <ImQuotesRight fontSize={40} className="text-right" />
         </span>

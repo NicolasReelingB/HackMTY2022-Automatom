@@ -12,6 +12,8 @@ import { useState } from "react";
 import { ethers } from "ethers";
 import GettingStarted from "./GetS";
 import Claim from "./Claim";
+import Purchase from "./Purchase";
+import Footer from "./Footer";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -71,6 +73,10 @@ function App() {
                   element={<Create marketplace={marketplace} nft={nft} />}
                 />
                 <Route
+                  path="/purchase"
+                  element={<Purchase marketplace={marketplace} nft={nft} />}
+                />
+                <Route
                   path="/my-listed-items"
                   element={
                     <MyListedItems
@@ -105,6 +111,7 @@ function App() {
             </div>
           )}
         </div>
+        <Footer />
       </div>
     </BrowserRouter>
   );

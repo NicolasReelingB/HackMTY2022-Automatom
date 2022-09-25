@@ -9,7 +9,7 @@ export default function Claim() {
   return (
     <div className="flex flex-col justify-center items-center">
       <div className="container flex flex-col justify-center items-center">
-        <h1 className="text-center">Claim your purchase</h1>
+        <h1 className="text-center my-4">Claim your purchase</h1>
         <form className="grid grid-cols-2">
           <label htmlFor="tid" className="text-left">
             Transaction ID:
