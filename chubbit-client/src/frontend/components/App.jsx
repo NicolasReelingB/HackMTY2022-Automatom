@@ -62,7 +62,7 @@ function App() {
           {loading ? (
             <>
               <div className="h-20"></div>
-              <GettingStarted />
+              <GettingStarted web3Handler={web3Handler} account={account} />
             </>
           ) : (
             <div>
