@@ -53,6 +53,7 @@ const Purchase = ({ marketplace, nft }) => {
     );
   return (
     <div className="flex flex-col justify-center items-center">
+        <h1 className="text-4xl font-bold text-center my-4">Comprar</h1>
       {items.length > 0 ? (
         <div className="px-5 container grid md:grid-cols-3 grid-cols-1">
           {items.map((item, i) => (

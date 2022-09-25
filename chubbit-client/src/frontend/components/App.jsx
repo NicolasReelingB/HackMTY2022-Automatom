@@ -60,7 +60,10 @@ function App() {
         <Navigation web3Handler={web3Handler} account={account} />
         <div>
           {loading ? (
-            <GettingStarted />
+            <>
+              <div className="h-20"></div>
+              <GettingStarted />
+            </>
           ) : (
             <div>
               <Routes>
@@ -70,43 +73,70 @@ function App() {
                 />
                 <Route
                   path="/create"
-                  element={<Create marketplace={marketplace} nft={nft} />}
+                  element={
+                    <>
+                      {" "}
+                      <div className="h-24"></div>
+                      <Create marketplace={marketplace} nft={nft} />{" "}
+                    </>
+                  }
                 />
                 <Route
                   path="/purchase"
-                  element={<Purchase marketplace={marketplace} nft={nft} />}
+                  element={
+                    <>
+                      <div className="h-24"></div>{" "}
+                      <Purchase marketplace={marketplace} nft={nft} />
+                    </>
+                  }
                 />
                 <Route
                   path="/my-listed-items"
                   element={
-                    <MyListedItems
-                      marketplace={marketplace}
-                      nft={nft}
-                      account={account}
-                    />
+                    <>
+                      <div className="h-24"></div>{" "}
+                      <MyListedItems
+                        marketplace={marketplace}
+                        nft={nft}
+                        account={account}
+                      />
+                    </>
                   }
                 />
                 <Route
                   path="/my-purchases"
                   element={
-                    <MyPurchases
-                      marketplace={marketplace}
-                      nft={nft}
-                      account={account}
-                    />
+                    <>
+                      <div className="h-24"></div>{" "}
+                      <MyPurchases
+                        marketplace={marketplace}
+                        nft={nft}
+                        account={account}
+                      />
+                    </>
                   }
                 />
                 <Route
                   path="/GetS"
                   element={
-                    <GettingStarted
-                      marketplace={marketplace}
-                      nft={nft}
-                      account={account}
-                    />
+                    <>
+                      <div className="h-24"></div>{" "}
+                      <GettingStarted
+                        marketplace={marketplace}
+                        nft={nft}
+                        account={account}
+                      />
+                    </>
                   }
                 />
-                <Route path="/claim" element={<Claim />} />
+                <Route
+                  path="/claim"
+                  element={
+                    <>
+                      <div className="h-24"></div> <Claim />
+                    </>
+                  }
+                />
               </Routes>
             </div>
           )}
