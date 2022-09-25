@@ -11,7 +11,6 @@ import NFTAddress from "../contractsData/NFT-address.json";
 import { useState } from "react";
 import { ethers } from "ethers";
 import { Spinner } from "react-bootstrap";
-import FaceDetect from "./FaceDetect";
 
 function App() {
   const [loading, setLoading] = useState(true);
