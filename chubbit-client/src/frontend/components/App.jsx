@@ -14,6 +14,11 @@ import GettingStarted from "./GetS";
 import Claim from "./Claim";
 import Purchase from "./Purchase";
 import Footer from "./Footer";
+import Tech from "./Tech";
+import Why from "./Why";
+import What from "./What";
+import About_Info from "./About_info";
+import About from "./About";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -106,6 +111,10 @@ function App() {
                     />
                   }
                 />
+                <Route path="/Tech" element={<Tech/>} />
+                <Route path="/Why" element={<Why />} />
+                <Route path="/What" element={<What />} />
+                <Route path="/about" element={<About_Info />} />
                 <Route path="/claim" element={<Claim />} />
               </Routes>
             </div>
