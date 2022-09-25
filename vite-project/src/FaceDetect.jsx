@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 function FaceDetect() {
+  let navigate = useNavigate();
   let faceio;
 
   useEffect(() => {
@@ -16,7 +18,6 @@ function FaceDetect() {
           pin: "12345",
         },
       });
-
       console.log(` Unique Facial ID: ${response.facialId}
       Enrollment Date: ${response.timestamp}
       Gender: ${response.details.gender}
@@ -35,6 +36,7 @@ function FaceDetect() {
       console.log(` Unique Facial ID: ${response.facialId}
           PayLoad: ${response.payload}
           `);
+      navigate("/test");
     } catch (error) {
       console.log(error);
     }

@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.App {
+    background-color: #FF3CAC;
+    background: linear-gradient(109.6deg, rgb(43, 1, 91) 13.4%, rgb(122, 2, 54) 100.2%);
+    background-size: contain;
+    min-height: 100vh;
+    color: white;
+}
+
+.purple-glass {
+    /* From https://css.glass */
+    background: rgba(219, 67, 255, 0.35);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.2px);
+    -webkit-backdrop-filter: blur(5.2px);
+    border: 1px solid rgba(219, 67, 255, 0.3);
+}
+
+.text-input {
+    @apply m-2 p-2 rounded-lg text-black;
+}
