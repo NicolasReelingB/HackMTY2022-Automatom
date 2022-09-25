@@ -11,7 +11,7 @@ import NFTAddress from "../contractsData/NFT-address.json";
 import { useState } from "react";
 import { ethers } from "ethers";
 import { Spinner } from "react-bootstrap";
-
+import GettingStarted from "./GetS";
 function App() {
   const [loading, setLoading] = useState(true);
   const [account, setAccount] = useState(null);
@@ -100,6 +100,10 @@ function App() {
                       account={account}
                     />
                   }
+                />
+                <Route
+                  path="/GetS"
+                  element={<GettingStarted marketplace={marketplace} nft={nft} account={account}/>}
                 />
               </Routes>
             </div>

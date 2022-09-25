@@ -19,6 +19,9 @@ const Navigation = ({ web3Handler, account }) => {
         <Link to="/my-purchases" className="text-gray-200 text-md mx-4">
           Mis compras
         </Link>
+        <Link to="/GetS" className="text-gray-200 text-md mx-4">
+          Getting Started
+        </Link>
       </div>
       <div className="flex flex-row justify-center items-center w-1/4">
         {account ? (
