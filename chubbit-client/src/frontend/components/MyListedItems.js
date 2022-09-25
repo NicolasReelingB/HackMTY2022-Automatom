@@ -5,7 +5,7 @@ import ItemCard from "./ItemCard";
 function renderSoldItems(items) {
   return (
     <div className="flex flex-col justify-center items-center">
-      <h1>Sold</h1>
+      <h1 className="my-4">Sold</h1>
       <div className="px-5 container grid md:grid-cols-3 grid-cols-1">
         {items.map((item, idx) => (
           <ItemCard
@@ -70,7 +70,7 @@ export default function MyListedItems({ marketplace, nft, account }) {
     <div className="flex flex-col justify-center items-center">
       {soldItems.length > 0 && renderSoldItems(soldItems)}
 
-      <h1>Listed</h1>
+      <h1 className="my-4">Listed</h1>
       {listedItems.length > 0 ? (
         <div className="px-5 container grid md:grid-cols-3 grid-cols-1">
           {listedItems.map((item, idx) => (

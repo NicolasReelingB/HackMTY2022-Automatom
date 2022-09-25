@@ -13,12 +13,21 @@
 
 .purple-glass {
     /* From https://css.glass */
-    background: rgba(219, 67, 255, 0.35);
+    background: rgba(205, 113, 255, 0.35);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5.2px);
     -webkit-backdrop-filter: blur(5.2px);
-    border: 1px solid rgba(219, 67, 255, 0.3);
+    border: 1px solid rgba(229, 113, 255, 0.3);
+}
+
+.white-glass {
+    background: rgba( 255, 255, 255, 0.4 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 8.5px );
+    -webkit-backdrop-filter: blur( 8.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .text-input {
