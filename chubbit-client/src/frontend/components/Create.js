@@ -45,6 +45,7 @@ const Create = ({ marketplace, nft }) => {
         JSON.stringify({ image, price, name, description })
       );
       mintThenList(result);
+      nav("/my-listed-items");
     } catch (error) {
       console.log("ipfs uri upload error: ", error);
     }

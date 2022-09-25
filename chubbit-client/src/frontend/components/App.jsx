@@ -13,6 +13,7 @@ import { ethers } from "ethers";
 import GettingStarted from "./GetS";
 import Claim from "./Claim";
 import Purchase from "./Purchase";
+import Footer from "./Footer";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -110,6 +111,7 @@ function App() {
             </div>
           )}
         </div>
+        <Footer />
       </div>
     </BrowserRouter>
   );
